@@ -165,7 +165,7 @@ Public Class Form1
 
     Private Sub TxtLama_TextChanged(sender As Object, e As EventArgs) Handles TxtLama.TextChanged
         If Val(TxtLama.Text) > 3 Then
-            potongan = 1000
+            potongan = 1000 * (Val(Txtlama.Text) - 3)
         Else
             potongan = 0
         End If
